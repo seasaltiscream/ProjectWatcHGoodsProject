@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.5s ease;
+    /* background: url(watch.jpg) rgba(0,0,0,0.5); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(watch.jpg); */
+}
+
+body{
+    background: black;
+}
+
+header{
+    z-index: 999;
+    position: absolute;     /*or fixed if wanna follow*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 1s ease;
+}
+
+header .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: gold; 
+    text-decoration: none;
+}
+
+header .navbar{
+    position: relative;
+}
+
+header .navbar .header-items a{
+    color: white;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease; 
+    position: relative;
+    text-decoration: none;
+}
+
+header .navbar .header-items a:before{
+    content: '';
+    position: absolute;
+    background: white;      /* change to white after setting background(s) */
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+header .navbar .header-items a:hover:before{
+    width: 100%;
+    /* color: gold; */
+    /* background: gold; */
+}
+
+.header-image{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(productbanner.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px #000000;
+    /* text-decoration: underline; */
+}
+
+.alert1{
+    color: white;
+    font-size: 28px;
+    /* text-align: justify; */
+    margin-left: 80px;
+    margin-top: 80px;
+    letter-spacing: 2px;
+}
+
+
+/* montblanc */
+.container1{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container1 .watchbox1{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container1 .watchbox1 .montblanc{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container1 .watchbox1 .montblanc img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+}
+.container1 .watchbox1 .montblanc h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container1 .watchbox1 .montblanc p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container1 .watchbox1 .montblanc a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container1 .watchbox1 .montblanc a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+
+
+/* omega */
+.container2{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container2 .watchbox2{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container2 .watchbox2 .omega{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container2 .watchbox2 .omega img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+}
+.container2 .watchbox2 .omega h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container2 .watchbox2 .omega p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container2 .watchbox2 .omega a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container2 .watchbox2 .omega a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+/* richard mille */
+.container3{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container3 .watchbox3{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container3 .watchbox3 .swatch{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container3 .watchbox3 .swatch img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.container3 .watchbox3 .swatch h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container3 .watchbox3 .swatch p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container3 .watchbox3 .swatch a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container3 .watchbox3 .swatch a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+/* Patek Philippe */
+.container4{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container4 .watchbox4{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container4 .watchbox4 .patekphilippe{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container4 .watchbox4 .patekphilippe img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.container4 .watchbox4 .patekphilippe h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container4 .watchbox4 .patekphilippe p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container4 .watchbox4 .patekphilippe a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container4 .watchbox4 .patekphilippe a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+/* Audemars Piguet */
+.container5{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container5 .watchbox5{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container5 .watchbox5 .audemars{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container5 .watchbox5 .audemars img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.container5 .watchbox5 .audemars h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container5 .watchbox5 .audemars p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container5 .watchbox5 .audemars a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container5 .watchbox5 .audemars a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+/* Rolex */
+.container6{
+    justify-content: center;
+    background: black;
+    padding: 30px 9%;
+    padding-bottom: 20px;
+}
+.container6 .watchbox6{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 50px; */
+}
+.container6 .watchbox6 .rolex{
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container6 .watchbox6 .rolex img{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.container6 .watchbox6 .rolex h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.container6 .watchbox6 .rolex p{
+    font-size:15px ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline; 
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.container6 .watchbox6 .rolex a{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+.container6 .watchbox6 .rolex a:hover{
+    color: gold;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+}
+
+/* FOOTER ---------------> INSPECT MEDIA PLS */
+.footer{
+    margin-top: 150px;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.footercontainer{
+    max-width: 1140px;          /*or 1170?*/
+    /* background-color: grey; */
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* line-height: 1.5; */
+}
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-column h4{
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 25px;        /*35?*/
+    font-weight: 700;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.footer-column h4:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: gold;
+    height: 3px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    color: grey;
+    display: block;
+    transition: all .5s ease;
+}
+
+.footer-column ul li a:hover{
+    color: black;
+    /* text-decoration: underline; */
+    padding-left: 7px;
+}
+
+.footer-text{
+    /* align-items: center; */
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 200;
+}
+
+@media (max-width: 767px){
+    .footer-column{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px){
+    .footer-column{
+    width: 100%;
+    }
+}
+
+@media (max-width: 1040px){        /*inspect and readjust*/
+    header {
+        padding: 15px 25px;
+    }
+    section {
+    padding: 100px 25px;
+    }
+    header .navbar{            
+        display: none;
+    }
+
+    header .navbar.active{             
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1,1,1,0.5);
+        /* transition: 0.5s ease; */
+        /* transform: translate(5px); */
+        /* display: inline-block;   */
+    }
+
+    header .navbar .header-items a{
+        /* display: inline-block;   */
+        /* transition: 0.5s ease; */
+        color: gold;
+        font-size: 1.3em;
+        margin: 20px;
+    }
+
+    header .navbar .header-items a:before{
+        /* display: inline-block;   */
+        background: gold;
+        height: 2.5px;
+        /* transition: 0.5s ease; */
+    }
+
+    header .navbar.active .header-items{        /*space actually matters wow*/
+        background: black;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        /* display: inline-block;   */
+        /* transform: translate(5px); */
+        /* transition: 0.5s ease; */
+    }
+
+    .burger{
+        background: url(menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .burger.active{
+        z-index: 999;
+        background: url(close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.5s ease;
+    }
+    .container1 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .container2 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .container3 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .container4 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .container5 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .container6 {
+        justify-content: center;
+        background: black;
+        padding: 30px 25%;
+        padding-bottom: 20px;
+    }
+    .alert1{
+        color: white;
+        font-size: 28px;
+        /* text-align: justify; */
+        margin-left: 300px;
+        margin-top: 80px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 800px){
+    .container1 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container2 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container3 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container4 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container5 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container6 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 420px){
+    .container1 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container2 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container3 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container4 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container5 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .container6 {
+        justify-content: center;
+        background: black;
+        padding: 30px 20%;
+        padding-bottom: 20px;
+    }
+    .alert1{
+        color: white;
+        font-size: 28px;
+        /* text-align: justify; */
+        margin-left: 100px;
+        margin-top: 80px;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations Page</title>
+    <link rel="stylesheet" type="text/css" href="locations_style.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">WatcHGoods</a>
+        <div class="burger"></div>
+        <div class="navbar">
+            <div class="header-items">
+                <!-- <a href="#">Products</a> -->
+                <a href="product.html">Products</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+        </div>
+   </header>
+
+   <div class="header-image">
+    <div class="container">
+        <h1>LOCATIONS</h1>
+    </div>
+   </div>
+
+   <br>
+   <h1 class="usa-alert">USA</h1>
+    <br>
+
+   <div class="locbox">
+        <div class="usa">
+            <div class="nyc">
+                <img src="nyc1.jpg" alt="nyc">
+                <h2>New York City</h2>
+                <p>
+                    15 West 47th Street <br>
+                    2nd Floor, Suite 200 <br>
+                    New York, NY 10036
+                </p>
+            </div>
+
+            <div class="nyc">
+                <img src="nyc2.jpg" alt="nyc">
+                <h2>Miami</h2>
+                <p>53 NE 40th Street <br>
+                    Miami, FL 33137-3509
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h1 class="jkt-alert">Indonesia</h1>
+    <br>
+
+    <div class="locboxindo">
+        <div class="jkt">
+            <div class="jktlocs">
+                <img src="jakarta1.jpg" alt="nyc">
+                <h2>Pacific Place - Jakarta</h2>
+                <p>
+                    Ground Floor, Unit 12 A-B <br>
+                    Jl. Jend Sudirman (SCBD) <br>
+                    Kav 52-53 lot 3-5 <br>
+                    Jakarta 12190
+                </p>
+            </div>
+    
+            <div class="jktlocs">
+                <img src="jakarta2.jpg" alt="nyc">
+                <h2>Plaza Senayan - Jakarta</h2>
+                <p>
+                    Level 1 #122B-126B-128B <br>
+                    Jl. Asia Afrika No.8 <br>
+                    Jakarta 10270 <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h1 class="asia-alert">Other Locations - Asia</h1>
+    <br>
+
+    <div class="locboxasia">
+        <div class="asia">
+            <div class="asialocs">
+                <img src="asia1.jpg" alt="asia">
+                <h2>Marina Bay Sands - Singapore</h2>
+                <p>
+                    2 Bayfront Avenue <br>
+                    #01-58 <br>
+                    Singapore 018972
+                </p>
+            </div>
+    
+            <div class="asialocs">
+                <img src="asia2.jpg" alt="asia">
+                <h2>Saigon Centre - Vietnam</h2>
+                <p>
+                    L1-14 <br>
+                    65 Le Loi Street, District 1 <br>
+                    Ho Chi Minh City <br>
+                    Vietnam
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="row">
+                <div class="footer-column">
+                    <!-- COMPANY -->
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="home.html">Attributes</a></li>
+                        <li><a href="home.html">Promotions and Offers</a></li>
+                        <li><a href="aboutus.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <!-- ABOUT US -->
+                    <h4>Brands</h4>
+                    <ul>
+                        <li><a href="product.html">Mont-Blanc</a></li>
+                        <li><a href="product.html">Omega</a></li>
+                        <li><a href="product.html">Swatch</a></li>
+                        <li><a href="product.html">Patek Philippe</a></li>
+                        <li><a href="product.html">Audemars Piguet</a></li>
+                        <li><a href="product.html">Rolex</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <!-- LOCATIONS -->
+                    <h4>Store Locations</h4>
+                    <ul>
+                        <li><a href="locations.html">USA</a></li>
+                        <li><a href="locations.html">Indonesia</a></li>
+                        <li><a href="locations.html">Other countries - Asia</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <!-- CONTACT US -->
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="contactus.html">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h4 class="footer-text">© WatcHGoods</h4>
+    </footer>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu
+        const burgerbutton = document.querySelector(".burger");
+        const navbutton = document.querySelector(".navbar");
+    
+        burgerbutton.addEventListener("click", () => {
+            burgerbutton.classList.toggle("active");
+            navbutton.classList.toggle("active");
+        });
+
+        //Javascript for slider
+        const buttons = document.querySelectorAll(".slidebtn");
+        const sliders = document.querySelectorAll(".watchbackground");
+        const texts = document.querySelectorAll(".text-content");
+
+
+        var slidernav = function(manual){
+            buttons.forEach((button) => {
+                button.classList.remove("active")
+            });
+
+            sliders.forEach((sliders) => {
+                sliders.classList.remove("active")
+            });
+
+            texts.forEach((texts) => {
+                texts.classList.remove("active")
+            });
+
+            buttons[manual].classList.add("active");
+            sliders[manual].classList.add("active");
+            texts[manual].classList.add("active");
+        }
+
+        buttons.forEach((buttons, i) => {
+            buttons.addEventListener("click", () =>{
+                slidernav(i);
+            });
+        });
+
+    </script>
+</body>
+</html>
