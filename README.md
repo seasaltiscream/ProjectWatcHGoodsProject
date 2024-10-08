@@ -4,3 +4,5 @@ WatcHGoods is a store to the greatest collection of used luxury watches.
 All the watches being sold at WatcHGoods are certified as authentic and Collector Quality whereas there is no need to think twice or hesitate about the watches' quality that you're going to buy.
 
 This project focuses on implementing designing and user interactions by using HTML, CSS, and JavaScript. This project has no back-end.
+
+figma link: https://www.figma.com/design/O2xMZaY4boxpEQJ1s0SpiD/watchgoods?node-id=0-1&t=8xMsCFhAHzFJFIj3-1
